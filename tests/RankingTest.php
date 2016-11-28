@@ -13,10 +13,7 @@ class RankingTest extends \PHPUnit_Framework_TestCase
 {
     public function testGetAccessRanking()
     {
-        $redis = new \Redis();
-        $redis->connect('127.0.0.1', 6379);
-
-        $ranking = new Ranking($redis);
+        $ranking = new Ranking();
 
         $article_ids_of_accessed = [1,1,1,2,3,4,5,3,4,5,5,4,1,1,5];
 
