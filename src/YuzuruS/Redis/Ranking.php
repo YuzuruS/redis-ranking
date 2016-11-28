@@ -21,9 +21,9 @@ class Ranking
      * Ranking constructor.
      * @param null $redis
      * @param string $prefix
-     * @param int $expiration_date
+     * @param int $expiration_date 60*60*24*30 30 day
      */
-    public function __construct($redis = null, $prefix = 'app:', $expiration_date = 60 * 60 * 24 * 30)
+    public function __construct($redis = null, $prefix = 'app:', $expiration_date = 2592000)
     {
         if (!$redis) {
             $redis = new \Redis();

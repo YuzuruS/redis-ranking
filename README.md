@@ -97,6 +97,8 @@ Currently tested with PHP 7.0.0 + Redis 2.6.12.
 
 History
 ----------------------------
+- 1.0.2
+  - Bug fix
 - 1.0.0
   - Published
 
